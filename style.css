@@ -1,0 +1,84 @@
+
+body {
+    margin: 0;
+    background-color: white;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.boshi {
+    background: linear-gradient(135deg, #304ffe, #172554);
+    border-radius: 20px;
+    padding: 30px 40px;
+    max-width: 500px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.boshi:hover {
+    transform: translateY(-5px);
+}
+
+.silka {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 190px;
+}
+
+.silka a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.discord {
+    background: #5865F2;
+}
+
+.discord:hover {
+    background: #404EED;
+    transform: translateX(5px);
+}
+
+.telegram {
+    background: #229ED9;
+}
+
+.telegram:hover {
+    background: #087DB5;
+    transform: translateX(5px);
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .boshi {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .silka {
+        width: 100%;
+    }
+}
